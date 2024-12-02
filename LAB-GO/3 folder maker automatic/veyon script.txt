@@ -1,1 +1,34 @@
+
+buatkan dalam bahasa golang
+
+buat script untuk membuat folder di Document jika tidak ada argumen dari command line , jika ada argumen maka gunakan path di argumen dari command line.
+
+jadi script nya membuat folder , "$1_$2_KelasA" buat dari kelas A sampai kelas I dan yang $0 $1 ganti dengan argumen dari command lagi jadi program harus jalan dan harus menyertakan argumen agar bisa jalan
+
+analisis buat code dengan yang best practice dan profesional dalam hal apa pun jangan ada kesalahan
+
+
+setelah selesai script nya cara agar bisa run dari veyon gmn di start application nya ?. saya sudah file transfer "ke C:\Users\PC NAME\uas.exe"
+
+
+
 cmd.exe /c "C:\Users\%USERNAME%\uas.exe --folder UAS_2024"
+
+
+
+powershell -Command "Start-Process 'http://192.168.2.50'"
+
+
+CLOSE ALL APP
+powershell -Command "Get-Process | Where-Object { $_.Name -notin @('powershell', 'System', 'svchost') } | Stop-Process -Force; Start-Process explorer"
+
+
+
+CREATE
+
+powershell -Command "& {New-Item -Path ([System.IO.Path]::Combine([System.Environment]::GetFolderPath('MyDocuments'), 'Kelasb')) -ItemType Directory -Force}"
+
+DELETE
+
+powershell -Command "& {Remove-Item -Path ([System.IO.Path]::Combine([System.Environment]::GetFolderPath('MyDocuments'), 'Kelasb')) -Recurse -Force}" 
+
