@@ -1,0 +1,1 @@
+cmd.exe /c "C:\Users\%USERNAME%\uas.exe --folder UAS_2024"
